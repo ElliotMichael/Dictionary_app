@@ -1,3 +1,100 @@
 * {
     box-sizing: border-box;
 }
+
+html{
+    font-size: 16px;
+}
+
+
+body{
+    font-family: 'DM Serif Text', serif;
+    font-family: 'Merriweather', serif;
+    display: flex;
+    width: 90rem;
+    padding: 3.625rem 22rem 7.75rem 21.9375rem;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.header-section{
+    display: flex;
+}
+.right-headers{
+    display: flex;
+    flex-direction: row;
+   margin-left: 29.9rem;
+}
+
+
+.family-option{
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    margin-right:1.12rem;
+}
+
+.arrow-down, .rectangle, .toggle{
+    margin-right: 1.12rem;
+}
+
+.arrow-down{
+    margin-top: 0.5rem;
+}
+
+.rectangle{
+    
+}
+
+/* container for the toggle */
+.toggle{
+    background-color: #757575;
+    position: relative;
+    width: 2.5rem;
+    height: 1.25rem;
+    flex-shrink: 0;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-top: 0.2rem;
+}
+
+/* this removes the checkbox */
+.toggle input[type= "checkbox"]{
+    display: none;
+}
+
+/* style for the slider */
+.toggle .slider{
+position: absolute;
+  cursor: pointer;
+  top: 0.2rem;
+  left: 0.18rem;
+  width: 0.875rem; 
+  height: 0.875rem; 
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: 0.4s;
+  
+}
+
+.search{
+    position: relative;
+    display: inline-block;
+}
+.search-bar{
+    
+    margin-top: 3.22rem;
+    margin-bottom: 3.22rem;
+    width: 46rem;
+    height: 4rem;
+    border-radius: 1rem;
+    
+}
+
+.search-icon{
+    margin-top:2rem;
+}
