@@ -2,14 +2,12 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 16px;
 }
 
 
-body{
-    font-family: 'DM Serif Text', serif;
-    font-family: 'Merriweather', serif;
+body {
     display: flex;
     width: 90rem;
     padding: 3.625rem 22rem 7.75rem 21.9375rem;
@@ -21,37 +19,38 @@ body{
 
 }
 
-.header-section{
+.header-section {
     display: flex;
 }
-.right-headers{
+
+.right-headers {
     display: flex;
     flex-direction: row;
-   margin-left: 29.9rem;
+    margin-left: 29.9rem;
 }
 
 
-.family-option{
+.family-option {
     font-size: 1.125rem;
     font-weight: 700;
     line-height: 1.5rem;
-    margin-right:1.12rem;
-}
-
-.arrow-down, .rectangle, .toggle{
     margin-right: 1.12rem;
 }
 
-.arrow-down{
+.arrow-down,
+.rectangle,
+.toggle {
+    margin-right: 1.12rem;
+}
+
+.arrow-down {
     margin-top: 0.5rem;
 }
 
-.rectangle{
-    
-}
+.rectangle {}
 
 /* container for the toggle */
-.toggle{
+.toggle {
     background-color: #757575;
     position: relative;
     width: 2.5rem;
@@ -63,38 +62,92 @@ body{
 }
 
 /* this removes the checkbox */
-.toggle input[type= "checkbox"]{
+.toggle input[type="checkbox"] {
     display: none;
 }
 
 /* style for the slider */
-.toggle .slider{
-position: absolute;
-  cursor: pointer;
-  top: 0.2rem;
-  left: 0.18rem;
-  width: 0.875rem; 
-  height: 0.875rem; 
-  background-color: #ffffff;
-  border-radius: 50%;
-  transition: 0.4s;
-  
+.toggle .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0.2rem;
+    left: 0.18rem;
+    width: 0.875rem;
+    height: 0.875rem;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transition: 0.4s;
+
 }
 
-.search{
+.search {
     position: relative;
     display: inline-block;
 }
-.search-bar{
-    
+
+.search-bar {
+
     margin-top: 3.22rem;
     margin-bottom: 3.22rem;
     width: 46rem;
     height: 4rem;
     border-radius: 1rem;
+
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    right: 1.5rem;
+    transform: translateY(-50%);
+}
+
+.word-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.phonetics {
+    color: var(--A445ED, #a445ed);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+.grammar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.grammar-line {
+    width: 41rem;
+    height: 0.32rem;
+    flex-shrink: 0;
+    margin-top: auto;
+}
+
+.grammar-type {
+    color: #2D2D2D;
+    margin-top: 2.5rem;
+    font-style: italic;
+    font-weight: bold;
     
 }
 
-.search-icon{
-    margin-top:2rem;
+.dict-word {
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: inter;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.thick{
+    border: 0.25rem solid #000; /* 0.25rem thick line with a solid black color */
+    padding: 10px; /* Just for demonstration purposes */
+    margin: 10px; /* Just for demonstration purposes */
 }
