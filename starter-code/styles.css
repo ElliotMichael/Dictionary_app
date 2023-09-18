@@ -47,7 +47,7 @@ body {
     margin-top: 0.5rem;
 }
 
-.rectangle {}
+
 
 /* container for the toggle */
 .toggle {
@@ -61,7 +61,7 @@ body {
     margin-top: 0.2rem;
 }
 
-/* this removes the checkbox */
+/* this removes the checkbox for the toggle */
 .toggle input[type="checkbox"] {
     display: none;
 }
@@ -117,7 +117,8 @@ body {
     line-height: normal;
 
 }
-.grammar{
+
+.grammar {
     display: flex;
     justify-content: space-between;
 }
@@ -125,7 +126,6 @@ body {
 .grammar-line {
     width: 41rem;
     height: 0.32rem;
-    flex-shrink: 0;
     margin-top: auto;
 }
 
@@ -134,7 +134,7 @@ body {
     margin-top: 2.5rem;
     font-style: italic;
     font-weight: bold;
-    
+
 }
 
 .dict-word {
@@ -146,8 +146,45 @@ body {
     line-height: normal;
 }
 
-.thick{
-    border: 0.25rem solid #000; /* 0.25rem thick line with a solid black color */
-    padding: 10px; /* Just for demonstration purposes */
-    margin: 10px; /* Just for demonstration purposes */
+.source{
+    display: flex;
+}
+.sus{
+    font-family: lora;
+    color: #757575;
+    font-feature-settings: "clig" off, "liga" off;
+    margin-right: 1rem;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.grammar-type-meaning, .synonym{
+    font-family: lora;
+    color: #757575;
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.sus-link{
+    color: #2D2D2D;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: lora;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.tabler-external-link{
+    width: 0.75rem;
+    flex-shrink: 0;
+    margin-left: 0.4rem;
 }
